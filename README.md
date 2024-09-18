@@ -63,7 +63,8 @@ df_elbow.hvplot.line(
     xticks=k
 )
 ```
-![image](https://github.com/user-attachments/assets/1b0998d0-fddb-4671-8cbf-95d9b37acadb)
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/c5cbcfce-4107-4beb-9f5e-6ea9371b8a8a">
+
 
 
 ## Cluster Cryptocurrencies with K-means Using the Scaled DataFrame
@@ -92,7 +93,7 @@ price_change_scaled_predictions_df.hvplot.scatter(
     title="Crypto Segmentation based on K-Means Clustering (k=3)"
 )
 ```
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/724e6537-2606-443b-9981-304226da0da9">
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/724e6537-2606-443b-9981-304226da0da9">
 
 
 ## Optimize Clusters with Principal Component Analysis
@@ -154,7 +155,7 @@ df_elbow_pca.hvplot.line(
     xticks=k
 )
 ```
-<img width="529" alt="image" src="https://github.com/user-attachments/assets/25f0ba03-4392-447a-b8e5-425a645b4acc">
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/25f0ba03-4392-447a-b8e5-425a645b4acc">
 
 
 ## Cluster Cryptocurrencies with K-means Using the PCA DataFrame
@@ -195,10 +196,13 @@ crypto_pca_predictions_df.hvplot.scatter(
 ## Conclusion
 This analysis provides insights into the clustering of cryptocurrencies using both the scaled data and the PCA-transformed data. The results can help in identifying trends and making informed investment decisions.
 
-<img width="528" alt="image" src="https://github.com/user-attachments/assets/d5911698-ca2f-49d1-b7a3-0a8ceca2522a">
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/d5911698-ca2f-49d1-b7a3-0a8ceca2522a">
 
 
-<img width="529" alt="image" src="https://github.com/user-attachments/assets/cec85930-a97d-4031-88f4-48a44354ae04">
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/52815092-1cf1-47c3-b015-2470a2834f47">
+
+
+
 
 
 ## Contact
