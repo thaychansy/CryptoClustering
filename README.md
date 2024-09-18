@@ -63,7 +63,7 @@ df_elbow.hvplot.line(
     xticks=k
 )
 ```
-![image](https://github.com/user-attachments/assets/4a70eaca-e259-4c5e-99ed-6d435815d1e6)
+![image](https://github.com/user-attachments/assets/1b0998d0-fddb-4671-8cbf-95d9b37acadb)
 
 
 ## Cluster Cryptocurrencies with K-means Using the Scaled DataFrame
@@ -92,7 +92,8 @@ price_change_scaled_predictions_df.hvplot.scatter(
     title="Crypto Segmentation based on K-Means Clustering (k=3)"
 )
 ```
-![image](https://github.com/user-attachments/assets/27f060ae-d946-4fe8-b003-918f66106933)
+<img width="532" alt="image" src="https://github.com/user-attachments/assets/724e6537-2606-443b-9981-304226da0da9">
+
 
 ## Optimize Clusters with Principal Component Analysis
 We perform PCA to reduce features to three principal components.
@@ -153,7 +154,8 @@ df_elbow_pca.hvplot.line(
     xticks=k
 )
 ```
-![image](https://github.com/user-attachments/assets/a3487987-351a-43bb-a2e8-65378f2bf3eb)
+<img width="529" alt="image" src="https://github.com/user-attachments/assets/25f0ba03-4392-447a-b8e5-425a645b4acc">
+
 
 ## Cluster Cryptocurrencies with K-means Using the PCA DataFrame
 Repeat the clustering process using the PCA DataFrame.
@@ -186,15 +188,18 @@ crypto_pca_predictions_df.hvplot.scatter(
     title="PCA Crypto Segmentation based on K-Means Clustering (k=4)"
 )
 ```
-![image](https://github.com/user-attachments/assets/e3678883-2d75-4e5b-afea-b597f62d6c1d)
+<img width="529" alt="image" src="https://github.com/user-attachments/assets/0a530fb0-1e54-4b5d-9ab9-50a56a04b41f">
+
 
 
 ## Conclusion
 This analysis provides insights into the clustering of cryptocurrencies using both the scaled data and the PCA-transformed data. The results can help in identifying trends and making informed investment decisions.
 
-![image](https://github.com/user-attachments/assets/41e65067-d7df-4e5c-8309-5d6e486e791d)
+<img width="528" alt="image" src="https://github.com/user-attachments/assets/d5911698-ca2f-49d1-b7a3-0a8ceca2522a">
 
-![image](https://github.com/user-attachments/assets/edb8c288-068f-4a50-9e06-5ab1f1ea44bf)
+
+<img width="529" alt="image" src="https://github.com/user-attachments/assets/cec85930-a97d-4031-88f4-48a44354ae04">
+
 
 ## Contact
 
