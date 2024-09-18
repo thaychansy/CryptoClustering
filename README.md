@@ -193,7 +193,7 @@ crypto_pca_predictions_df.hvplot.scatter(
 
 
 ## Conclusion
-This analysis provides insights into the clustering of cryptocurrencies using both the scaled data and the PCA-transformed data. The results can help in identifying trends and making informed investment decisions.
+This analysis provides insights into the clustering of cryptocurrencies using both the scaled data and the PCA-transformed data. The results can help in identifying trends and making informed investment decisions. The cryptocurrency clustering project successfully applied unsupervised learning techniques, specifically K-means clustering, to group cryptocurrencies based on their price change patterns over various time periods.
 
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/d5911698-ca2f-49d1-b7a3-0a8ceca2522a">
 
