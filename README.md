@@ -92,7 +92,7 @@ price_change_scaled_predictions_df.hvplot.scatter(
     title="Crypto Segmentation based on K-Means Clustering (k=3)"
 )
 ```
-<img width="532" alt="image" src="https://github.com/user-attachments/assets/724e6537-2606-443b-9981-304226da0da9">
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/724e6537-2606-443b-9981-304226da0da9">
 
 
 ## Optimize Clusters with Principal Component Analysis
