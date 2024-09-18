@@ -2,7 +2,7 @@
 
 This project aims to analyze and cluster cryptocurrencies using K-means clustering, employing data normalization and dimensionality reduction techniques such as Principal Component Analysis (PCA).
 The Cryto_Clustering notebook file with interactive visuals can be easily viewed by clicking on this link: [[https://nbviewer.org/github.com/thaychansy/CryptoClustering/blob/main/Crypto_Clustering.ipynb](https://nbviewer.org/github/thaychansy/CryptoClustering/blob/main/Crypto_Clustering.ipynb)
-](https://nbviewer.org/github/thaychansy/CryptoClustering/blob/main/Crypto_Clustering.ipynb)
+]
 ## Table of Contents
 - [Prepare the Data](#prepare-the-data)
 - [Find the Best Value for k Using the Scaled DataFrame](#find-the-best-value-for-k-using-the-scaled-dataframe)
