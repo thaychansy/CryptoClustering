@@ -199,7 +199,8 @@ This analysis provides insights into the clustering of cryptocurrencies using bo
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/d5911698-ca2f-49d1-b7a3-0a8ceca2522a">
 
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/52815092-1cf1-47c3-b015-2470a2834f47">
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/6a0fae1b-37c3-4cc4-b4c3-eb1a29bd7890">
+
 
 
 
