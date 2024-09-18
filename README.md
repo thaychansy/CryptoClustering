@@ -126,8 +126,8 @@ crypto_pca_df.set_index('coinid', inplace=True)
 ## Find the Best Value for k Using the PCA DataFrame
 Use the elbow method on the PCA DataFrame as previously described to determine the best k value.
 
-Best Value for k with PCA: (Include your findings here)Find the Best Value for k Using the PCA DataFrame
-Use the elbow method on the PCA DataFrame as previously described to determine the best k value.
+Best Value for k with PCA is k = 4.  Finding the Best Value for k Using the PCA DataFrame and the elbow method on the PCA DataFrame 
+as previously described to determine the best k value.
 
 ```python
 # Create a list with the number of k-values from 1 to 11
