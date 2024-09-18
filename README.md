@@ -189,7 +189,7 @@ crypto_pca_predictions_df.hvplot.scatter(
     title="PCA Crypto Segmentation based on K-Means Clustering (k=4)"
 )
 ```
-<img width="529" alt="image" src="https://github.com/user-attachments/assets/0a530fb0-1e54-4b5d-9ab9-50a56a04b41f">
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/0a530fb0-1e54-4b5d-9ab9-50a56a04b41f">
 
 
 
