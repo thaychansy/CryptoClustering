@@ -35,7 +35,7 @@ df_market_data_scaled = StandardScaler().fit_transform(df_market_data[['price_ch
                                                                     'price_change_percentage_1y']])
 
 # Create scaled DataFrame
-pridf_market_data_scaled = pd.DataFrame(price_change_scaled, columns=['price_change_percentage_24h', 'price_change_percentage_7d', 
+df_market_data_scaled = pd.DataFrame(price_change_scaled, columns=['price_change_percentage_24h', 'price_change_percentage_7d', 
                                                                     'price_change_percentage_14d', 'price_change_percentage_30d', 
                                                                     'price_change_percentage_60d', 'price_change_percentage_200d',
                                                                     'price_change_percentage_1y'])
