@@ -1,6 +1,6 @@
 # Cryptocurrency Clustering Analysis
 
-This project aims to analyze and cluster cryptocurrencies using  Python and unsupervised learning to predict if cryptocurrencies are affected by 24-hour or 7-day price changes. As well as utilizing K-means clustering, employing data normalization and dimensionality reduction techniques such as Principal Component Analysis (PCA).
+This project aims to analyze and cluster cryptocurrencies using  Python and unsupervised machine learning to predict if cryptocurrencies are affected by 24-hour or 7-day price changes. As well as utilizing K-means clustering, employing data normalization and dimensionality reduction techniques such as Principal Component Analysis (PCA).
 The Cryto_Clustering notebook file with interactive visuals can be easily viewed by clicking on this link: [[https://nbviewer.org/github.com/thaychansy/CryptoClustering/blob/main/Crypto_Clustering.ipynb](https://nbviewer.org/github/thaychansy/CryptoClustering/blob/main/Crypto_Clustering.ipynb)]
 ## Table of Contents
 - [Prepare the Data](#prepare-the-data)
