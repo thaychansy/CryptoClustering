@@ -3,12 +3,16 @@
 This project aims to analyze and cluster cryptocurrencies using  Python and unsupervised machine learning to predict if cryptocurrencies are affected by 24-hour or 7-day price changes. As well as utilizing K-means clustering, employing data normalization and dimensionality reduction techniques such as Principal Component Analysis (PCA).
 The Cryto_Clustering notebook file with interactive visuals can be easily viewed by clicking on this link: [[https://nbviewer.org/github.com/thaychansy/CryptoClustering/blob/main/Crypto_Clustering.ipynb](https://nbviewer.org/github/thaychansy/CryptoClustering/blob/main/Crypto_Clustering.ipynb)]
 ## Table of Contents
-- [Prepare the Data](#prepare-the-data)
-- [Find the Best Value for k Using the Scaled DataFrame](#find-the-best-value-for-k-using-the-scaled-dataframe)
-- [Cluster Cryptocurrencies with K-means Using the Scaled DataFrame](#cluster-cryptocurrencies-with-k-means-using-the-scaled-dataframe)
-- [Optimize Clusters with Principal Component Analysis](#optimize-clusters-with-principal-component-analysis)
-- [Find the Best Value for k Using the PCA DataFrame](#find-the-best-value-for-k-using-the-pca-dataframe)
-- [Cluster Cryptocurrencies with K-means Using the PCA DataFrame](#cluster-cryptocurrencies-with-k-means-using-the-pca-dataframe)
+- [Cryptocurrency Clustering Analysis](#cryptocurrency-clustering-analysis)
+  - [Table of Contents](#table-of-contents)
+  - [Prepare the Data](#prepare-the-data)
+  - [Find the Best Value for k Using the Scaled DataFrame](#find-the-best-value-for-k-using-the-scaled-dataframe)
+  - [Cluster Cryptocurrencies with K-means Using the Scaled DataFrame](#cluster-cryptocurrencies-with-k-means-using-the-scaled-dataframe)
+  - [Optimize Clusters with Principal Component Analysis](#optimize-clusters-with-principal-component-analysis)
+  - [Find the Best Value for k Using the PCA DataFrame](#find-the-best-value-for-k-using-the-pca-dataframe)
+  - [Cluster Cryptocurrencies with K-means Using the PCA DataFrame](#cluster-cryptocurrencies-with-k-means-using-the-pca-dataframe)
+  - [Conclusion](#conclusion)
+  - [Contact](#contact)
 
 
 
@@ -25,13 +29,13 @@ df_market_data = pd.read_csv(
     index_col="coin_id")
 
 # Normalize data
-price_change_scaled = StandardScaler().fit_transform(df_market_data[['price_change_percentage_24h', 'price_change_percentage_7d', 
+df_market_data_scaled = StandardScaler().fit_transform(df_market_data[['price_change_percentage_24h', 'price_change_percentage_7d', 
                                                                     'price_change_percentage_14d', 'price_change_percentage_30d', 
                                                                     'price_change_percentage_60d', 'price_change_percentage_200d',
                                                                     'price_change_percentage_1y']])
 
 # Create scaled DataFrame
-price_change_scaled_df = pd.DataFrame(price_change_scaled, columns=['price_change_percentage_24h', 'price_change_percentage_7d', 
+pridf_market_data_scaled = pd.DataFrame(price_change_scaled, columns=['price_change_percentage_24h', 'price_change_percentage_7d', 
                                                                     'price_change_percentage_14d', 'price_change_percentage_30d', 
                                                                     'price_change_percentage_60d', 'price_change_percentage_200d',
                                                                     'price_change_percentage_1y'])
@@ -52,7 +56,7 @@ inertia = []
 # Compute inertia for each k
 for i in k:
     k_model = KMeans(n_clusters=i, random_state=0)
-    k_model.fit(price_change_scaled_df)
+    k_model.fit(df_market_data_scaled)
     inertia.append(k_model.inertia_)
 
 # Plot elbow curve
@@ -79,10 +83,10 @@ Using the best k value, we cluster the cryptocurrencies as follows:
 model = KMeans(n_clusters=3, random_state=1)
 
 # Fit the K-Means model using the scaled data
-model.fit(price_change_scaled_df)
+model.fit(df_market_data_scaled)
 
 # Predict the clusters to group the cryptocurrencies using the scaled data
-k_3 = model.predict(price_change_scaled_df)
+k_3 = model.predict(df_market_data_scaled)
 
 # Plot
 price_change_scaled_predictions_df.hvplot.scatter(
@@ -108,7 +112,7 @@ pca = PCA(n_components=3)
 
 # Use the PCA model with `fit_transform` to reduce to 
 # three principal components.
-crypto_pca = pca.fit_transform(price_change_scaled)
+crypto_pca = pca.fit_transform(df_market_data_scaled)
 
 # Retrieve the explained variance to determine how much information 
 # can be attributed to each principal component.
