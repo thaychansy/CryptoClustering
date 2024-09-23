@@ -94,7 +94,7 @@ price_change_scaled_predictions_df.hvplot.scatter(
     y="price_change_percentage_7d",
     by="crypto_segment",  # Color points by the cluster labels from K-Means
     hover_cols=["coinid"],  # Add the cryptocurrency name to hover information
-    title="Crypto Segmentation based on K-Means Clustering (k=3)"
+    title="Crypto Segmentation based on K-Means Clustering (k=4)"
 )
 ```
 <img width="1000" alt="image" src="https://github.com/user-attachments/assets/8357e259-c384-4af3-b775-e739cadbd4c1">
