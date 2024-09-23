@@ -80,7 +80,7 @@ Using the best k value, we cluster the cryptocurrencies as follows:
 
 ```python
 # Initialize the K-Means model using the best value for k
-model = KMeans(n_clusters=3, random_state=1)
+model = KMeans(n_clusters=4, random_state=1)
 
 # Fit the K-Means model using the scaled data
 model.fit(df_market_data_scaled)
