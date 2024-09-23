@@ -86,7 +86,7 @@ model = KMeans(n_clusters=4, random_state=1)
 model.fit(df_market_data_scaled)
 
 # Predict the clusters to group the cryptocurrencies using the scaled data
-k_3 = model.predict(df_market_data_scaled)
+k_4 = model.predict(df_market_data_scaled)
 
 # Plot
 price_change_scaled_predictions_df.hvplot.scatter(
@@ -97,7 +97,8 @@ price_change_scaled_predictions_df.hvplot.scatter(
     title="Crypto Segmentation based on K-Means Clustering (k=3)"
 )
 ```
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/724e6537-2606-443b-9981-304226da0da9">
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/8357e259-c384-4af3-b775-e739cadbd4c1">
+
 
 
 ## Optimize Clusters with Principal Component Analysis
